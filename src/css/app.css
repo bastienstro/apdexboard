@@ -1,0 +1,115 @@
+html, body
+{
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1;
+	background: #F5F5F5;
+	text-align: center;
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+
+.apdexboard {
+	text-align: left;
+	width: 810px;
+	display: inline-block;
+	margin:0 auto;
+	padding: 15px;
+}
+.apdexboard--header {
+	padding: 15px;
+	display: flex;
+	flex: 0 0 auto;
+}
+
+.apdexboard--header--title {
+	color:#000000;
+	font-size: 35px;
+	font-weight: bold;
+	line-height: 43px;
+	align-self:baseline;
+	flex:0 0 auto;
+}
+
+.apdexboard--header--useremail {
+	color:#000000;
+	font-size: 18px;
+	overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+	padding-left: 5px;
+	line-height: 22px;
+	align-self :baseline;
+	flex:0 1 auto;
+	
+}
+
+.apdexboard--header--togglelist {
+	text-align: right;
+	color:#000000;
+	font-weight: 300;
+	margin-left: 30px;
+	cursor:pointer;
+	align-self :baseline;
+	flex:1 0 auto;
+}
+
+.apdexboard--body {
+	width: 100%;
+}
+
+.apdexboard--body.is-grid .host {
+	width: calc(50% - 90px);
+}
+
+.apdexboard--body.is-list .host {
+	width: calc(100% - 90px);
+}
+
+.host {
+	background: #FFFFFF;
+	margin: 15px;
+	padding: 30px;
+	vertical-align: top;
+	display: inline-block;
+}
+
+.host--title {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 19px;
+}
+
+.host--apps {
+	margin:0;
+	padding:0;
+}
+
+.app {
+	list-style-type: none;
+	display: flex;
+	margin: 23px 0px 0px 0px;
+	cursor:pointer;
+}
+
+.app--apdex {
+	color:#4A4A4A;
+	opacity: 0.62;
+	width:35px;
+	font-size: 13px;
+	line-height: 19px;
+	font-weight: bold;
+}
+
+.app--name {
+	color:#4A4A4A;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 19px;
+}
